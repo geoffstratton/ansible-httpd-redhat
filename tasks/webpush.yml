@@ -1,0 +1,20 @@
+---
+- name: Create webpush ssh dir
+  file:
+    path: "{{ webpush_home }}/.ssh"
+    state: "directory"
+    owner: "{{ webpush_user }}"
+    group: "{{ webpush_group }}"
+    mode: 0700
+  tags:
+    - webpush
+
+- name: Deploy webpush authkeys
+  copy:
+    src: "{{ webpush_user }}_authkeys"   # Sourced from files/ dir
+    dest: "{{ webpush_home }}/.ssh/authorized_keys"
+    owner: "{{ webpush_user }}"
+    group: "{{ webpush_group }}"
+    mode: 0600
+  tags:
+    - webpush

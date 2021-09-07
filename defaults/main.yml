@@ -1,0 +1,12 @@
+---
+ansible_roles_path: '/opt/ansible/roles'
+artifactory_uri: 'https://jfrogbuild.artifactory.com/artifactory'
+init_certs_artif_path: 'httpd-certs/httpd'
+
+apache_dir: '/etc/httpd'
+apache_ctl: '/usr/sbin/apachectl'
+apache_user: 'apache2'
+apache_group: 'apache2'
+
+apache_cer: 'httpd.cer'
+apache_key: 'httpd.key'

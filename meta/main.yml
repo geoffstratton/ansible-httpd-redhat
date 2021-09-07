@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: ansible-cloudbees-redhat
+  role_name: ansible-httpd-redhat
   author: Geoff Stratton
-  description: Red Hat CloudBees Role
+  description: Red Hat Apache Role
   company: GeoffStratton.com    
   license: 
     - Apache 2.0
